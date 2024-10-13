@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const REST_API_URL = 'http://localhost:8080/students'
+const REST_API_URL = 'http://localhost:8080/teacher/students'
 
 export const listOfStudents = () => axios.get(`${REST_API_URL}/all`)
 

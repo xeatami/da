@@ -1,0 +1,31 @@
+// function App() {
+//     const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+//     useEffect(() => {
+//         const verifyAuth = async () => {
+//             const authenticated = await checkAuthentication(); 
+//             setIsAuthenticated(authenticated);
+//         };
+
+//         verifyAuth();
+//     }, []);
+
+//     return (
+//         <BrowserRouter>
+//             <Routes>
+//                 <Route path='/' element={<Home />} />
+//                 <Route path='/login' element={<LoginPage />} />
+//                 <Route path='/students' element={<PrivateRoute element={<ListOfStudents />} isAuthenticated={isAuthenticated} />} />
+//                 <Route path='/courses' element={<PrivateRoute element={<ListOfCourses />} isAuthenticated={isAuthenticated} />} />
+//                 <Route path='/addStudent' element={<PrivateRoute element={<AddStudent />} isAuthenticated={isAuthenticated} />} />
+//                 <Route path='/addCourse' element={<PrivateRoute element={<AddCourse />} isAuthenticated={isAuthenticated} />} />
+//                 <Route path='/editStudent/:id' element={<PrivateRoute element={<EditStudent />} isAuthenticated={isAuthenticated} />} />
+//                 <Route path='/editCourse/:id' element={<PrivateRoute element={<EditCourse />} isAuthenticated={isAuthenticated} />} />
+//                 <Route path='/manageCourse/:courseId' element={<PrivateRoute element={<CourseManagement />} isAuthenticated={isAuthenticated} />} />
+//                 <Route path="/course/:courseId/grades" element={<PrivateRoute element={<GradesManagement />} isAuthenticated={isAuthenticated} />} />
+//             </Routes>
+//         </BrowserRouter>
+//     );
+// }
+
+// export default App;

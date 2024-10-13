@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/grades")
+@RequestMapping("/teacher/grades")
 public class GradeController {
     @Autowired
     private GradeService gradeService;
